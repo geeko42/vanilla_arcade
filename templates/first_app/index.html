@@ -1,0 +1,1732 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+
+<html>
+    <head>
+        <title>Vanilla Arcade</title>
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta charset="utf-8">
+        <meta name="author" content="Roman Kirichik">
+        <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+        <!-- Favicons -->
+        <link rel="shortcut icon" src="{% static "images/favicon.png" %}">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}" />
+        <link rel="stylesheet" href="{% static "css/style.css" %}" />
+        <link rel="stylesheet" href="{% static "css/style-responsive.css" %}" />
+        <link rel="stylesheet" href="{% static "css/animate.min.css" %}" />
+        <link rel="stylesheet" href="{% static "css/vertical-rhythm.min.css" %}" />
+        <link rel="stylesheet" href="{% static "css/owl.carousel.css" %}" />
+        <link rel="stylesheet" href="{% static "css/magnific-popup.css" %}" />
+        <link rel="stylesheet" href="{% static "css/YTPlayer.css" %}">
+
+        <script>
+              var gmUrl = "{% static "images/map-marker.png" %}";
+        </script>
+
+        <style>
+        .home-section2{
+            background-size: 100% auto;
+        }
+        .home-section2 img {
+            width: 100%;
+        }
+        </style>
+
+    </head>
+    <body class="appear-animate">
+
+        <!-- Page Loader -->
+        <div class="page-loader">
+            <div class="loader">Loading...</div>
+        </div>
+        <!-- End Page Loader -->
+
+        <!-- Navigation panel -->
+        <nav class="main-nav transparent stick-fixed">
+            <div class="full-wrapper relative clearfix">
+                <!-- Logo ( * your text or image into link tag *) -->
+                <div class="nav-logo-wrap local-scroll">
+                    <a href="#top" class="logo">
+                        <!-- <img src="{{ newLogo.img.url }}" alt="" /> -->
+                        <!-- <img src="/media/uploads/jack.jpg" alt="" /> -->
+                        <!-- <a href="#top"><img src="{{ WebsiteLogo.image.url }}" alt="uploads" width="78" height="36"/></a> -->
+                        <!-- <img src="{{WebsiteLogo.image.url}}" alt="" width="78" height="36"/> -->
+                        <img src="{% static "images/vanilla-logo-dark.png" %}" alt="" />
+                        <!-- <img src="newLogo/" alt="" /> -->
+                    </a>
+                </div>
+                <div class="mobile-nav">
+                    <i class="fa fa-bars"></i>
+                </div>
+                <!-- Main Menu -->
+                <div class="inner-nav desktop-nav">
+                    <ul class="clearlist scroll-nav local-scroll">
+                        <li class="active"><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#clients">Clients</a></li>
+                        <li><a href="#about">About</a></li>
+                        <!-- <li><a href="#portfolio">Portfolio</a></li> -->
+                        <li><a href="#contact">Contacts</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- End Navigation panel -->
+
+        <!-- Page Wrap -->
+        <div class="page" id="top">
+
+            <!-- Home Section -->
+            <section class="home-section bg-gray parallax-2" data-background="{% static "images/van-landingpage.jpg" %}" id="home">
+                <div class="js-height-full">
+
+                    <!-- Hero Content -->
+                   <div class="home-content container">
+                        <div class="home-text">
+
+                            <h1 class="hs-line-8 font-alt mb-50 mb-xs-30">
+                                WE CREATE EXTENDED
+                            </h1>
+
+                            <h2 class="hs-line-11 font-alt mb-50 mb-xs-30">
+                                REALITY EXPERIENCES
+                            </h2>
+
+            <!--                <div class="local-scroll">
+                                <a href="#about" class="btn btn-mod btn-medium btn-round hidden-xs">See More</a>
+                                <span class="hidden-xs">&nbsp;</span>
+                                <a href="https://vimeo.com/79802823" class="btn btn-mod btn-medium btn-round lightbox mfp-iframe">Play Reel</a>
+                            </div> -->
+
+                        </div>
+                    </div>
+                    <!-- End Hero Content -->
+
+                    <!-- Scroll Down -->
+                    <div class="local-scroll">
+                        <a href="#services" class="scroll-down"><i class="fa fa-angle-down scroll-down-icon"></i></a>
+                    </div>
+                    <!-- End Scroll Down -->
+
+                </div>
+            </section>
+            <!-- End Home Section -->
+
+            <!-- Banner 2-->
+
+            <div class="banner2">
+                     <h2 class="hs-line-11 font-alt mb-50 mb-xs-30 banner2text">
+                         <mark class="" style="background-color:transparent;">We Craft Beautiful</mark><mark class="" style="color:rgba(248,202,18,1);background-color:transparent;"> Digital</mark><mark class="" style="background-color:transparent;"> Solutions</mark>
+                     </h2>
+            </div>
+
+            <!-- <section class="home-section bg-gray parallax-2" id="van-banner-2">
+                <img src="{% static "images/van-banner-2.png" %}" alt="">
+            </section> -->
+
+            <!-- End Banner 2 -->
+
+            <!-- Fullwidth What we do Slider -->
+            <div class="home-section fullwidth-slider2 bg-dark" id="services">
+
+
+                <!-- Slide Item -->
+                <section class="home-section home-section2 bg-scroll bg-dark-alfa-30">
+                    <div class="container" style="width:100%">
+                        <img src="{% static "images/captioned/brandidenity.jpg" %}" alt="">
+                        <!-- Hero Content -->
+                        <!-- <div class="home-content">
+                            <div class="home-text">
+
+                                <h1 class="hs-line-8 no-transp font-alt mb-50 mb-xs-30">
+                                    We Are just crative people
+                                </h1>
+
+                                <h2 class="hs-line-14 font-alt mb-50 mb-xs-30">
+                                    Rhythm Creative Studio
+                                </h2>
+
+                                <div class="local-scroll">
+                                    <a href="#about" class="btn btn-mod btn-border-w btn-medium btn-round hidden-xs">See More</a>
+                                    <span class="hidden-xs">&nbsp;</span>
+                                    <a href="https://vimeo.com/79802823" class="btn btn-mod btn-border-w btn-medium btn-round lightbox mfp-iframe">Play Reel</a>
+                                </div>
+
+                            </div>
+                        </div> -->
+                        <!-- End Hero Content -->
+
+                    </div>
+                </section>
+                <!-- End Slide Item -->
+
+                <!-- Slide Item -->
+                <section class="home-section home-section2 bg-scroll bg-dark-alfa-50">
+                    <div class="container" style="width:100%">
+                      <img src="{% static "images/captioned/education.jpg" %}" alt="">
+                        <!-- Hero Content -->
+                        <!-- <div class="home-content">
+                            <div class="home-text">
+
+                                <h1 class="hs-line-8 no-transp font-alt mb-50 mb-xs-30">
+                                    Branding / Design / Development / Photo
+                                </h1>
+
+                                <h2 class="hs-line-14 font-alt mb-50 mb-xs-30">
+                                    Design Studio
+                                </h2>
+
+                                <div class="local-scroll">
+                                    <a href="#about" class="btn btn-mod btn-border-w btn-medium btn-round hidden-xs">See More</a>
+                                    <span class="hidden-xs">&nbsp;</span>
+                                    <a href="https://vimeo.com/79802823" class="btn btn-mod btn-border-w btn-medium btn-round lightbox mfp-iframe">Play Reel</a>
+                                </div>
+
+                            </div>
+                        </div> -->
+                        <!-- End Hero Content -->
+
+                    </div>
+                </section>
+                <!-- End Slide Item -->
+
+                <!-- Slide Item -->
+                <section class="home-section home-section2 bg-scroll bg-dark-alfa-50">
+                    <div class="container" style="width:100%">
+                        <img src="{% static "images/captioned/industrialApps.jpg" %}" alt="">
+                        <!-- Hero Content -->
+                        <!-- <div class="home-content">
+                            <div class="home-text">
+
+                                <h1 class="hs-line-8 no-transp font-alt mb-50 mb-xs-30">
+                                    Branding / Design / Development / Photo
+                                </h1>
+
+                                <h2 class="hs-line-14 font-alt mb-50 mb-xs-30">
+                                    Design Studio
+                                </h2>
+
+                                <div class="local-scroll">
+                                    <a href="#about" class="btn btn-mod btn-border-w btn-medium btn-round hidden-xs">See More</a>
+                                    <span class="hidden-xs">&nbsp;</span>
+                                    <a href="https://vimeo.com/79802823" class="btn btn-mod btn-border-w btn-medium btn-round lightbox mfp-iframe">Play Reel</a>
+                                </div>
+
+                            </div>
+                        </div> -->
+                        <!-- End Hero Content -->
+
+                    </div>
+                </section>
+                <!-- End Slide Item -->
+
+                <!-- Slide Item -->
+                <section class="home-section home-section2 bg-scroll bg-dark-alfa-50">
+                    <div class="container" style="width:100%">
+                        <img src="{% static "images/captioned/museums.jpg" %}" alt="">
+                        <!-- Hero Content -->
+                        <!-- <div class="home-content">
+                            <div class="home-text">
+
+                                <h1 class="hs-line-8 no-transp font-alt mb-50 mb-xs-30">
+                                    Branding / Design / Development / Photo
+                                </h1>
+
+                                <h2 class="hs-line-14 font-alt mb-50 mb-xs-30">
+                                    Design Studio
+                                </h2>
+
+                                <div class="local-scroll">
+                                    <a href="#about" class="btn btn-mod btn-border-w btn-medium btn-round hidden-xs">See More</a>
+                                    <span class="hidden-xs">&nbsp;</span>
+                                    <a href="https://vimeo.com/79802823" class="btn btn-mod btn-border-w btn-medium btn-round lightbox mfp-iframe">Play Reel</a>
+                                </div>
+
+                            </div>
+                        </div> -->
+                        <!-- End Hero Content -->
+
+                    </div>
+                </section>
+                <!-- End Slide Item -->
+
+                <!-- Slide Item -->
+                <section class="home-section home-section2 bg-scroll bg-dark-alfa-50">
+                    <div class="container" style="width:100%">
+                        <img src="{% static "images/captioned/training.jpg" %}" alt="">
+                        <!-- Hero Content -->
+                        <!-- <div class="home-content">
+                            <div class="home-text">
+
+                                <h1 class="hs-line-8 no-transp font-alt mb-50 mb-xs-30">
+                                    Branding / Design / Development / Photo
+                                </h1>
+
+                                <h2 class="hs-line-14 font-alt mb-50 mb-xs-30">
+                                    Design Studio
+                                </h2>
+
+                                <div class="local-scroll">
+                                    <a href="#about" class="btn btn-mod btn-border-w btn-medium btn-round hidden-xs">See More</a>
+                                    <span class="hidden-xs">&nbsp;</span>
+                                    <a href="https://vimeo.com/79802823" class="btn btn-mod btn-border-w btn-medium btn-round lightbox mfp-iframe">Play Reel</a>
+                                </div>
+
+                            </div>
+                        </div> -->
+                        <!-- End Hero Content -->
+
+                    </div>
+                </section>
+                <!-- End Slide Item -->
+
+            </div>
+            <!-- End What we do Fullwidth Slider -->
+
+            <!-- Banner 3 -->
+
+            <div class="banner3">
+                     <h2 class="hs-line-11 font-alt mb-50 mb-xs-30 banner3text">
+                         <mark class="" style="background-color:transparent;">What</mark><mark class="" style="color:rgba(248,202,18,1);background-color:transparent;"> We've</mark><mark class="" style="background-color:transparent;"> Done</mark>
+                     </h2>
+            </div>
+
+            <!-- <section class="home-section bg-gray parallax-2" id="van-banner-3">
+                <img src="{% static "images/van-banner-3.png" %}" alt="">
+            </section> -->
+
+            <!-- End Banner 3 -->
+
+            <!-- Tester -->
+
+            <section class="home-section bg-dark-alfa-30 bg-pattern-over" data-background="" id="home">
+                <div class="js-height-full container">
+
+                    <!-- Video BG Init -->
+                    <!-- ,containment:'#home' -->
+                    <div class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=I0SzB0uIkD8',autoPlay:true, showControls:true, showYTLogo: false, mute:true, startAt:0, opacity:5}">
+                    </div>
+                     <!-- End Video BG Init -->
+
+                    <!-- Hero Content -->
+                    <!-- <div class="home-content">
+                        <div class="home-text">
+
+                            <h1 class="hs-line-8 no-transp font-alt mb-50 mb-xs-30">
+                                We Are just crative people
+                            </h1>
+
+                            <h2 class="hs-line-12 font-alt mb-50 mb-xs-30">
+                                Rhythm Creative Studio
+                            </h2>
+
+                            <div class="local-scroll">
+                                <a href="#about" class="btn btn-mod btn-border-w btn-medium btn-round hidden-xs">See More</a>
+                                <span class="hidden-xs">&nbsp;</span>
+                                <a href="https://vimeo.com/79802823" class="btn btn-mod btn-border-w btn-medium btn-round lightbox mfp-iframe">Play Reel</a>
+                            </div>
+
+                        </div>
+                    </div> -->
+                    <!-- End Hero Content -->
+
+                </div>
+            </section>
+
+            <!-- End Tester -->
+
+            <!-- Clients -->
+
+            <section class="page-section vanilla-client" id="clients">
+                <div class="container relative">
+
+                   <div class="client-text">
+                           <h1 class="hs-line-8 font-alt mb-50 mb-xs-30">
+                               OUR CLIENTS
+                           </h1>
+
+                           <h2 class="hs-line-4 font-alt mb-50 mb-xs-30">
+                               We partner with artists, story-tellers and brands</br> to tell narratives in unique and innovative ways
+                           </h2>
+                   </div>
+
+                  <!-- Client item -->
+                  <div class="col-sm-2 mb-xs-30 wow fadeInUp" data-wow-delay="0.2s">
+                      <div class="team-item-zoom">
+
+                          <div class="team-item-image">
+
+                              <img src="{% static "images/coca.png" %}" alt="" />
+
+                              <div class="team-item-detail">
+
+                                  <h4 class="font-alt normal">Whats Up!</h4>
+
+                                  <p>
+                                      Adipiscing elit curabitur eu&nbsp;adipiscing lacus eu&nbsp;adipiscing lacus, a&nbsp;iaculis diam.
+                                  </p>
+
+                                  <div class="team-social-links">
+                                      <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                                      <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+                                      <a href="#" target="_blank"><i class="fa fa-pinterest"></i></a>
+                                  </div>
+
+                              </div>
+                          </div>
+
+                      </div>
+                  </div>
+                  <!-- End Client item -->
+
+                  <!-- Client item -->
+                  <div class="col-sm-2 mb-xs-30 wow fadeInUp" data-wow-delay="0.2s">
+                      <div class="team-item-zoom">
+
+                          <div class="team-item-image">
+
+                              <img src="{% static "images/nestle.png" %}" alt="" />
+
+                              <div class="team-item-detail">
+
+                                  <h4 class="font-alt normal">Whats Up!</h4>
+
+                                  <p>
+                                      Adipiscing elit curabitur eu&nbsp;adipiscing lacus eu&nbsp;adipiscing lacus, a&nbsp;iaculis diam.
+                                  </p>
+
+                                  <div class="team-social-links">
+                                      <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                                      <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+                                      <a href="#" target="_blank"><i class="fa fa-pinterest"></i></a>
+                                  </div>
+
+                              </div>
+                          </div>
+
+                      </div>
+                  </div>
+                  <!-- End Client item -->
+
+                  <!-- Client item -->
+                  <div class="col-sm-2 mb-xs-30 wow fadeInUp" data-wow-delay="0.2s">
+                      <div class="team-item-zoom">
+
+                          <div class="team-item-image">
+
+                              <img src="{% static "images/disney.png" %}" alt="" />
+
+                              <div class="team-item-detail">
+
+                                  <h4 class="font-alt normal">Whats Up!</h4>
+
+                                  <p>
+                                      Adipiscing elit curabitur eu&nbsp;adipiscing lacus eu&nbsp;adipiscing lacus, a&nbsp;iaculis diam.
+                                  </p>
+
+                                  <div class="team-social-links">
+                                      <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                                      <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+                                      <a href="#" target="_blank"><i class="fa fa-pinterest"></i></a>
+                                  </div>
+
+                              </div>
+                          </div>
+
+                      </div>
+                  </div>
+                  <!-- End Client item -->
+
+                  <!-- Client item -->
+                  <div class="col-sm-2 mb-xs-30 wow fadeInUp" data-wow-delay="0.2s">
+                      <div class="team-item-zoom">
+
+                          <div class="team-item-image">
+
+                              <img src="{% static "images/lums.png" %}" alt="" />
+
+                              <div class="team-item-detail">
+
+                                  <h4 class="font-alt normal">Whats Up!</h4>
+
+                                  <p>
+                                      Adipiscing elit curabitur eu&nbsp;adipiscing lacus eu&nbsp;adipiscing lacus, a&nbsp;iaculis diam.
+                                  </p>
+
+                                  <div class="team-social-links">
+                                      <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                                      <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+                                      <a href="#" target="_blank"><i class="fa fa-pinterest"></i></a>
+                                  </div>
+
+                              </div>
+                          </div>
+
+                      </div>
+                  </div>
+                  <!-- End Client item -->
+
+                  <!-- Client item -->
+                  <div class="col-sm-2 mb-xs-30 wow fadeInUp" data-wow-delay="0.2s">
+                      <div class="team-item-zoom">
+
+                          <div class="team-item-image">
+
+                              <img src="{% static "images/museum.png" %}" alt="" />
+
+                              <div class="team-item-detail">
+
+                                  <h4 class="font-alt normal">Whats Up!</h4>
+
+                                  <p>
+                                      Adipiscing elit curabitur eu&nbsp;adipiscing lacus eu&nbsp;adipiscing lacus, a&nbsp;iaculis diam.
+                                  </p>
+
+                                  <div class="team-social-links">
+                                      <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                                      <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+                                      <a href="#" target="_blank"><i class="fa fa-pinterest"></i></a>
+                                  </div>
+
+                              </div>
+                          </div>
+
+                      </div>
+                  </div>
+                  <!-- End Client item -->
+
+                  <!-- Client item -->
+                  <div class="col-sm-2 mb-xs-30 wow fadeInUp" data-wow-delay="0.2s">
+                      <div class="team-item-zoom">
+
+                          <div class="team-item-image">
+
+                              <img src="{% static "images/engro.png" %}" alt="" />
+
+                              <div class="team-item-detail">
+
+                                  <h4 class="font-alt normal">Whats Up!</h4>
+
+                                  <p>
+                                      Adipiscing elit curabitur eu&nbsp;adipiscing lacus eu&nbsp;adipiscing lacus, a&nbsp;iaculis diam.
+                                  </p>
+
+                                  <div class="team-social-links">
+                                      <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                                      <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+                                      <a href="#" target="_blank"><i class="fa fa-pinterest"></i></a>
+                                  </div>
+
+                              </div>
+                          </div>
+
+                      </div>
+                  </div>
+                  <!-- End Client item -->
+
+                </div>
+
+              </br>
+
+                <div class="container relative">
+
+                  <!-- Client item -->
+                  <div class="col-sm-2 mb-xs-30 wow fadeInUp" data-wow-delay="0.2s">
+                      <div class="team-item-zoom">
+
+                          <div class="team-item-image">
+
+                              <img src="{% static "images/bmw.png" %}" alt="" />
+
+                              <div class="team-item-detail">
+
+                                  <h4 class="font-alt normal">Whats Up!</h4>
+
+                                  <p>
+                                      Adipiscing elit curabitur eu&nbsp;adipiscing lacus eu&nbsp;adipiscing lacus, a&nbsp;iaculis diam.
+                                  </p>
+
+                                  <div class="team-social-links">
+                                      <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                                      <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+                                      <a href="#" target="_blank"><i class="fa fa-pinterest"></i></a>
+                                  </div>
+
+                              </div>
+                          </div>
+
+                      </div>
+                  </div>
+                  <!-- End Client item -->
+
+                  <!-- Client item -->
+                  <div class="col-sm-2 mb-xs-30 wow fadeInUp" data-wow-delay="0.2s">
+                      <div class="team-item-zoom">
+
+                          <div class="team-item-image">
+
+                              <img src="{% static "images/mcb.png" %}" alt="" />
+
+                              <div class="team-item-detail">
+
+                                  <h4 class="font-alt normal">Whats Up!</h4>
+
+                                  <p>
+                                      Adipiscing elit curabitur eu&nbsp;adipiscing lacus eu&nbsp;adipiscing lacus, a&nbsp;iaculis diam.
+                                  </p>
+
+                                  <div class="team-social-links">
+                                      <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                                      <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+                                      <a href="#" target="_blank"><i class="fa fa-pinterest"></i></a>
+                                  </div>
+
+                              </div>
+                          </div>
+
+                      </div>
+                  </div>
+                  <!-- End Client item -->
+
+                  <!-- Client item -->
+                  <div class="col-sm-2 mb-xs-30 wow fadeInUp" data-wow-delay="0.2s">
+                      <div class="team-item-zoom">
+
+                          <div class="team-item-image">
+
+                              <img src="{% static "images/cap.png" %}" alt="" />
+
+                              <div class="team-item-detail">
+
+                                  <h4 class="font-alt normal">Whats Up!</h4>
+
+                                  <p>
+                                      Adipiscing elit curabitur eu&nbsp;adipiscing lacus eu&nbsp;adipiscing lacus, a&nbsp;iaculis diam.
+                                  </p>
+
+                                  <div class="team-social-links">
+                                      <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                                      <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+                                      <a href="#" target="_blank"><i class="fa fa-pinterest"></i></a>
+                                  </div>
+
+                              </div>
+                          </div>
+
+                      </div>
+                  </div>
+                  <!-- End Client item -->
+
+                  <!-- Client item -->
+                  <div class="col-sm-2 mb-xs-30 wow fadeInUp" data-wow-delay="0.2s">
+                      <div class="team-item-zoom">
+
+                          <div class="team-item-image">
+
+                              <img src="{% static "images/ubl.png" %}" alt="" />
+
+                              <div class="team-item-detail">
+
+                                  <h4 class="font-alt normal">Whats Up!</h4>
+
+                                  <p>
+                                      Adipiscing elit curabitur eu&nbsp;adipiscing lacus eu&nbsp;adipiscing lacus, a&nbsp;iaculis diam.
+                                  </p>
+
+                                  <div class="team-social-links">
+                                      <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                                      <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+                                      <a href="#" target="_blank"><i class="fa fa-pinterest"></i></a>
+                                  </div>
+
+                              </div>
+                          </div>
+
+                      </div>
+                  </div>
+                  <!-- End Client item -->
+
+                  <!-- Client item -->
+                  <div class="col-sm-2 mb-xs-30 wow fadeInUp" data-wow-delay="0.2s">
+                      <div class="team-item-zoom">
+
+                          <div class="team-item-image">
+
+                              <img src="{% static "images/ptc.png" %}" alt="" />
+
+                              <div class="team-item-detail">
+
+                                  <h4 class="font-alt normal">Whats Up!</h4>
+
+                                  <p>
+                                      Adipiscing elit curabitur eu&nbsp;adipiscing lacus eu&nbsp;adipiscing lacus, a&nbsp;iaculis diam.
+                                  </p>
+
+                                  <div class="team-social-links">
+                                      <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                                      <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+                                      <a href="#" target="_blank"><i class="fa fa-pinterest"></i></a>
+                                  </div>
+
+                              </div>
+                          </div>
+
+                      </div>
+                  </div>
+                  <!-- End Client item -->
+
+                  <!-- Client item -->
+                  <div class="col-sm-2 mb-xs-30 wow fadeInUp" data-wow-delay="0.2s">
+                      <div class="team-item-zoom">
+
+                          <div class="team-item-image">
+
+                              <img src="{% static "images/telenor.png" %}" alt="" />
+
+                              <div class="team-item-detail">
+
+                                  <h4 class="font-alt normal">Whats Up!</h4>
+
+                                  <p>
+                                      Adipiscing elit curabitur eu&nbsp;adipiscing lacus eu&nbsp;adipiscing lacus, a&nbsp;iaculis diam.
+                                  </p>
+
+                                  <div class="team-social-links">
+                                      <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                                      <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+                                      <a href="#" target="_blank"><i class="fa fa-pinterest"></i></a>
+                                  </div>
+
+                              </div>
+                          </div>
+
+                      </div>
+                  </div>
+                  <!-- End Client item -->
+
+                </div>
+
+                <!-- Scroll Down -->
+                <div class="local-scroll">
+                    <a href="#about" class="scroll-down"><i class="fa fa-angle-down scroll-down-icon"></i></a>
+                </div>
+                <!-- End Scroll Down -->
+
+            </section>
+
+            <!-- End Clients -->
+
+
+            <!-- About Section -->
+            <section class="page-section" id="about">
+                <div class="container relative">
+
+                    <h2 class="section-title font-alt align-left mb-70 mb-sm-40">
+                        About Studio
+                    </h2>
+
+                    <div class="section-text mb-50 mb-sm-20">
+                        <div class="row">
+
+                            <div class="col-md-4">
+                                <blockquote>
+                                    <p>
+                                    Vanilla Arcade is&nbsp;a hyper tech extended reality company, supercharged to delivering the most mesmerizing
+experiences to the target audience.
+                                    </p>
+                                </blockquote>
+                            </div>
+
+                            <div class="col-md-5 col-sm-6 mb-sm-50 mb-xs-30">
+                              We're using real and virtual combined environments
+and human machine interactions generated by computer technology and to transform product design, training and advertising in a diverse range of industries from automotive to law enforcement.
+                            </div>
+
+                            <div class="col-md-3 col-sm-6 mb-sm-50 mb-xs-30">
+                        </div>
+                    </div>
+
+                  </br>
+
+                  <!-- Test -->
+                  <section class="home-section parallax-2">
+                    <!-- <div class="container" style="background:white;"> -->
+                    <blockquote>
+                      <p>Our  Team</p>
+                    </blockquote>
+                     <section class="customer-logos slider">
+                        <div class="slide"><img src="{% static "images/team/1.png" %}" alt="">
+                            <div class="team-item-descr font-alt">
+
+                              <div class="team-item-name">
+                                  Amna
+                              </div>
+
+                              <div class="team-item-role">
+                                  AI Manager
+                              </div>
+
+                          </div>
+
+                        </div>
+                        <div class="slide"><img src="{% static "images/team/2.png" %}" alt="">
+                          <div class="team-item-descr font-alt">
+
+                            <div class="team-item-name">
+                                Ahmed
+                            </div>
+
+                            <div class="team-item-role">
+                                Director
+                            </div>
+
+                          </div>
+
+                          </div
+                        </div>
+                        <div class="slide"><img src="{% static "images/team/3.png" %}" alt="">
+                            <div class="team-item-descr font-alt">
+
+                              <div class="team-item-name">
+                                  Aqeel
+                              </div>
+
+                              <div class="team-item-role">
+                                  Director HR
+                              </div>
+                          </div>
+                        </div>
+                        <div class="slide"><img src="{% static "images/team/4.png" %}" alt="">
+                          <div class="team-item-descr font-alt">
+
+                            <div class="team-item-name">
+                                Brig. Wajahat
+                            </div>
+
+                            <div class="team-item-role">
+                                Patron
+                            </div>
+
+                          </div>
+                        </div>
+                        <div class="slide"><img src="{% static "images/team/5.png" %}" alt="">
+                          <div class="team-item-descr font-alt">
+
+                            <div class="team-item-name">
+                                Hadia
+                            </div>
+
+                            <div class="team-item-role">
+                                Art Director & Co Founder
+                            </div>
+
+                          </div>
+                        </div>
+                        <div class="slide"><img src="{% static "images/team/6.png" %}" alt="">
+                          <div class="team-item-descr font-alt">
+
+                            <div class="team-item-name">
+                                Hassan
+                            </div>
+
+                            <div class="team-item-role">
+                                CCO & Co Founder
+                            </div>
+
+                          </div>
+                        </div>
+                        <div class="slide"><img src="{% static "images/team/7.png" %}" alt="">
+                          <div class="team-item-descr font-alt">
+
+                            <div class="team-item-name">
+                                Irfan Muneer
+                            </div>
+
+                            <div class="team-item-role">
+                                Director & Co Founder
+                            </div>
+
+                          </div>
+                        </div>
+                        <div class="slide"><img src="{% static "images/team/8.png" %}" alt="">
+                          <div class="team-item-descr font-alt">
+
+                            <div class="team-item-name">
+                                Khurram Zafar
+                            </div>
+
+                            <div class="team-item-role">
+                                Patron
+                            </div>
+
+                          </div>
+                        </div>
+                        <div class="slide"><img src="{% static "images/team/9.png" %}" alt="">
+                          <div class="team-item-descr font-alt">
+
+                            <div class="team-item-name">
+                                Nobuhiro
+                            </div>
+
+                            <div class="team-item-role">
+                                Technical Director
+                            </div>
+
+                          </div>
+                        </div>
+                        <div class="slide"><img src="{% static "images/team/10.png" %}" alt="">
+                          <div class="team-item-descr font-alt">
+
+                            <div class="team-item-name">
+                                Ramsha
+                            </div>
+
+                            <div class="team-item-role">
+                                Director Communication
+                            </div>
+
+                          </div>
+                        </div>
+                        <div class="slide"><img src="{% static "images/team/11.png" %}" alt="">
+                          <div class="team-item-descr font-alt">
+
+                            <div class="team-item-name">
+                                Sadaan
+                            </div>
+
+                            <div class="team-item-role">
+                                CEO & Co Founder
+                            </div>
+
+                          </div>
+                        </div>
+                        <div class="slide"><img src="{% static "images/team/12.png" %}" alt="">
+                          <div class="team-item-descr font-alt">
+
+                            <div class="team-item-name">
+                                Shizra
+                            </div>
+
+                            <div class="team-item-role">
+                                Creative Manager
+                            </div>
+
+                          </div>
+                        </div>
+                        <div class="slide"><img src="{% static "images/team/13.png" %}" alt="">
+                          <div class="team-item-descr font-alt">
+
+                            <div class="team-item-name">
+                                S.M Tanveer
+                            </div>
+
+                            <div class="team-item-role">
+                                Patron
+                            </div>
+
+                          </div>
+                        </div>
+                     </section>
+                    <!-- </div> -->
+                  </section>
+
+                  <!-- End Test -->
+
+                </div>
+            </section>
+            <!-- End About Section -->
+
+            <!-- Divider -->
+            <hr class="mt-0 mb-0 "/>
+            <!-- End Divider -->
+
+            <!-- Services Section -->
+  <!--      <section class="page-section" id="services">
+                <div class="container relative">
+
+                    <h2 class="section-title font-alt mb-70 mb-sm-40">
+                        Services
+                    </h2>
+
+                    <!-- Nav tabs -->
+  <!--              <ul class="nav nav-tabs tpl-alt-tabs font-alt pt-30 pt-sm-0 pb-30 pb-sm-0">
+                        <li class="active">
+                            <a href="#service-branding" data-toggle="tab">
+
+                                <div class="alt-tabs-icon">
+                                    <span class="icon-strategy"></span>
+                                </div>
+
+                                Branding
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#service-web-design" data-toggle="tab">
+
+                                <div class="alt-tabs-icon">
+                                    <span class="icon-desktop"></span>
+                                </div>
+
+                                Web Design
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#service-graphic" data-toggle="tab">
+
+                                <div class="alt-tabs-icon">
+                                    <span class="icon-tools"></span>
+                                </div>
+
+                                Graphic Design
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#service-development" data-toggle="tab">
+
+                                <div class="alt-tabs-icon">
+                                    <span class="icon-gears"></span>
+                                </div>
+
+                                Development
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#service-photography" data-toggle="tab">
+
+                                <div class="alt-tabs-icon">
+                                    <span class="icon-camera"></span>
+                                </div>
+
+                                Photography
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- End Nav tabs -->
+
+                </div>
+            </section>
+            <!-- End Services Section -->
+
+
+            <!-- Call Action Section -->
+            <section class="page-section pt-0 pb-0 banner-section bg-dark" data-background="{% static "" %}">
+                <div class="container relative">
+
+                    <div class="row">
+
+                        <div class="col-sm-6">
+
+                            <div class="mt-140 mt-lg-80 mb-140 mb-lg-80">
+                                <div class="banner-content">
+                                    <h3 class="banner-heading font-alt">Looking for exclusive digital services?</h3>
+                                    <div class="banner-decription">
+                                        Do you have any queries? Any problems that you need tackling?  Let us know! We are always available to ease your pains!
+                                    </div>
+                                    <div class="local-scroll">
+                                        <a href="#contact" class="btn btn-mod btn-w btn-medium btn-round">Lets talk</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-sm-6 banner-image wow fadeInUp" data-wow-duration="1.2s">
+                            <img src="{% static "images/screen.gif" %}" alt="" />
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+            <!-- End Call Action Section -->
+
+
+            <!-- Portfolio Section -->
+            <!-- <section class="page-section pb-0" id="portfolio">
+                <div class="relative">
+
+                    <h2 class="section-title font-alt mb-70 mb-sm-40">
+                        Portfolio
+                    </h2>
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2">
+
+                                <div class="section-text align-center mb-70 mb-xs-40">
+                                    In&nbsp;auctor ex&nbsp;id&nbsp;urna faucibus porttitor. Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit. In&nbsp;maximus ligula semper metus pellentesque mattis.
+                                    Maecenas volutpat, diam enim sagittis quam, id&nbsp;porta quam. Sed id&nbsp;dolor
+                                    consectetur fermentum nibh volutpat, accumsan purus.
+                                </div>
+
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <!-- Works Filter -->
+                    <!-- <div class="works-filter font-alt align-center">
+                        <a href="#" class="filter active" data-filter="*">All works</a>
+                        <a href="#branding" class="filter" data-filter=".branding">Branding</a>
+                        <a href="#design" class="filter" data-filter=".design">Design</a>
+                        <a href="#photography" class="filter" data-filter=".photography">Photography</a>
+                    </div> -->
+                    <!-- End Works Filter -->
+
+                    <!-- Works Grid -->
+                    <!-- <ul class="works-grid work-grid-3 work-grid-gut clearfix font-alt hover-white hide-titles" id="work-grid"> -->
+
+                        <!-- Work Item (Lightbox) -->
+                        <!-- <li class="work-item mix photography">
+                            <a href="{% static "images/portfolio/full-project-1.jpg" %}" class="work-lightbox-link mfp-image">
+                                <div class="work-img">
+                                    <img src="{% static "images/portfolio/projects-1.jpg" %}" alt="Work" />
+                                </div>
+                                <div class="work-intro">
+                                    <h3 class="work-title">Portrait</h3>
+                                    <div class="work-descr">
+                                        Lightbox
+                                    </div>
+                                </div>
+                            </a>
+                        </li> -->
+                        <!-- End Work Item -->
+
+                        <!-- Work Item (External Page) -->
+                        <!-- <li class="work-item mix branding design"> -->
+                            <!-- <a href="portfolio-single-1.html" class="work-ext-link">
+                                <div class="work-img">
+                                    <img class="work-img" src="{% static "images/portfolio/projects-2.jpg" %}" alt="Work" />
+                                </div>
+                                <div class="work-intro">
+                                    <h3 class="work-title">Vase 3D</h3>
+                                    <div class="work-descr">
+                                        External Page
+                                    </div>
+                                </div>
+                            </a>
+                        </li> -->
+                        <!-- End Work Item -->
+
+                        <!-- Work Item (External Page) -->
+                        <!-- <li class="work-item mix branding"> -->
+                            <!-- <a href="portfolio-single-1.html" class="work-ext-link">
+                                <div class="work-img">
+                                    <img class="work-img" src="{% static "images/portfolio/projects-3.jpg" %}" alt="Work" />
+                                </div>
+                                <div class="work-intro">
+                                    <h3 class="work-title">Boy in T-shirt</h3>
+                                    <div class="work-descr">
+                                        External Page
+                                    </div>
+                                </div>
+                            </a>
+                        </li> -->
+                        <!-- End Work Item -->
+
+                        <!-- Work Item (External Page) -->
+                        <!-- <li class="work-item mix design photography"> -->
+                            <!-- <a href="portfolio-single-1.html" class="work-ext-link">
+                                <div class="work-img">
+                                    <img class="work-img" src="{% static "images/portfolio/projects-4.jpg" %}" alt="Work" />
+                                </div>
+                                <div class="work-intro">
+                                    <h3 class="work-title">Space</h3>
+                                    <div class="work-descr">
+                                        External Page
+                                    </div>
+                                </div>
+                            </a>
+                        </li> -->
+                        <!-- End Work Item -->
+
+                        <!-- Work Item (External Page) -->
+                        <!-- <li class="work-item mix design"> -->
+                            <!-- <a href="portfolio-single-1.html" class="work-ext-link">
+                                <div class="work-img">
+                                    <img class="work-img" src="{% static "images/portfolio/projects-5.jpg" %}" alt="Work" />
+                                </div>
+                                <div class="work-intro">
+                                    <h3 class="work-title">Model</h3>
+                                    <div class="work-descr">
+                                        External Page
+                                    </div>
+                                </div>
+                            </a>
+                        </li> -->
+                        <!-- End Work Item -->
+
+                        <!-- Work Item (Lightbox) -->
+                        <!-- <li class="work-item mix design branding"> -->
+                            <!-- <a href="{% static "images/portfolio/full-project-3.jpg" %}" class="work-lightbox-link mfp-image">
+                                <div class="work-img">
+                                    <img src="{% static "images/portfolio/projects-6.jpg" %}" alt="Work" />
+                                </div>
+                                <div class="work-intro">
+                                    <h3 class="work-title">Young Man</h3>
+                                    <div class="work-descr">
+                                        Lightbox
+                                    </div>
+                                </div>
+                            </a>
+                        </li> -->
+                        <!-- End Work Item -->
+
+                    <!-- </ul> -->
+                    <!-- End Works Grid -->
+
+                <!-- </div>
+            </section> -->
+            <!-- End Portfolio Section -->
+
+
+            <!-- Call Action Section -->
+<!--        <section class="small-section bg-dark">
+                <div class="container relative">
+
+                    <div class="align-center">
+                        <h3 class="banner-heading font-alt">Like Our Creative Works?</h3>
+                        <div class="local-scroll">
+                            <a href="#contact" class="btn btn-mod btn-w btn-medium btn-round">Start Project</a>
+                        </div>
+                    </div>
+
+                </div>
+            </section>   -->
+            <!-- End Call Action Section -->
+
+
+            <!-- Features Section -->
+            <section class="page-section">
+                <div class="container relative">
+
+                    <h2 class="section-title font-alt mb-70 mb-sm-40">
+                        Why Choose Us?
+                    </h2>
+
+                    <!-- Features Grid -->
+                    <div class="row multi-columns-row alt-features-grid">
+
+                        <!-- Features Item -->
+                        <div class="col-sm-6 col-md-4 col-lg-4">
+                            <div class="alt-features-item align-center">
+                                <div class="alt-features-icon">
+                                    <span class="icon-flag"></span>
+                                </div>
+                                <h3 class="alt-features-title font-alt">We’re Creative</h3>
+                                <div class="alt-features-descr align-left">
+                                    We ensure customer retention by coming up with creative solutions that are better, faster, and cheaper than anyone else in the market.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Features Item -->
+
+                        <!-- Features Item -->
+                        <div class="col-sm-6 col-md-4 col-lg-4">
+                            <div class="alt-features-item align-center">
+                                <div class="alt-features-icon">
+                                    <span class="icon-clock"></span>
+                                </div>
+                                <h3 class="alt-features-title font-alt">We’re Punctual</h3>
+                                <div class="alt-features-descr align-left">
+                                  We work together to make sure we accomplish critical company organizational goals so that everything is delivered on time to ensure your satisfaction.
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Features Item -->
+
+                        <!-- Features Item -->
+                        <div class="col-sm-6 col-md-4 col-lg-4">
+                            <div class="alt-features-item align-center">
+                                <div class="alt-features-icon">
+                                    <span class="icon-hotairballoon"></span>
+                                </div>
+                                <h3 class="alt-features-title font-alt">We have magic</h3>
+                                <div class="alt-features-descr align-left">
+                                  Our extended reality solutions are nothing short of magic. We aim to do the impossible so that we deliver you solutions that are best in the market.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Features Item -->
+
+                        <!-- Features Item -->
+                        <div class="col-sm-6 col-md-4 col-lg-4">
+                            <div class="alt-features-item align-center">
+                                <div class="alt-features-icon">
+                                    <span class="icon-heart"></span>
+                                </div>
+                                <h3 class="alt-features-title font-alt">We are minimalist</h3>
+                                <div class="alt-features-descr align-left">
+                                  Minimalism is intentionality. We purposefully remove everything that distracts you from the value that you desire whilst keeping full functionality.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Features Item -->
+
+                        <!-- Features Item -->
+                        <div class="col-sm-6 col-md-4 col-lg-4">
+                            <div class="alt-features-item align-center">
+                                <div class="alt-features-icon">
+                                    <span class="icon-linegraph"></span>
+                                </div>
+                                <h3 class="alt-features-title font-alt">We’re responsible</h3>
+                                <div class="alt-features-descr align-left">
+                                  Responsible and dependable, we strive to keep our promises to you and thus approach all our projects in a systematic manner.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Features Item -->
+
+                        <!-- Features Item -->
+                        <div class="col-sm-6 col-md-4 col-lg-4">
+                            <div class="alt-features-item align-center">
+                                <div class="alt-features-icon">
+                                    <span class="icon-chat"></span>
+                                </div>
+                                <h3 class="alt-features-title font-alt">We're Friendly</h3>
+                                <div class="alt-features-descr align-left">
+                                  We love what we do, and that is visible in the way our entire team engages with you. We guarantee working with us will be an enjoyable experience.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Features Item -->
+
+                    </div>
+                    <!-- End Features Grid -->
+
+                </div>
+            </section>
+            <!-- End Features Section -->
+
+
+            <!-- Testimonials Section -->
+            <section class="page-section bg-dark bg-dark-alfa-90 fullwidth-slider" data-background="{% static "images/full-width-images/section-bg-3.jpg" %}">
+
+                <!-- Slide Item -->
+                <div>
+                    <div class="container relative">
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2 align-center">
+                                <!-- Section Icon -->
+                                <div class="section-icon">
+                                    <span class="icon-quote"></span>
+                                </div>
+                                <!-- Section Title --><h3 class="small-title font-alt">What people say?</h3>
+                                <blockquote class="testimonial white">
+                                    <p>
+                                        An extraordinary learning experience..", about the coco cola training simulator
+                                    </p>
+                                    <footer class="testimonial-author">
+                                        John Seward, CEO CCBPL Pakistan
+                                    </footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Slide Item -->
+
+                <!-- Slide Item -->
+                <div>
+                    <div class="container relative">
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2 align-center">
+                                <!-- Section Icon -->
+                                <div class="section-icon">
+                                    <span class="icon-quote"></span>
+                                </div>
+                                <!-- Section Title --><h3 class="small-title font-alt">What people say?</h3>
+                                <blockquote class="testimonial white">
+                                    <p>
+                                        On the National History Museum Project "It has been a pleasure working with Sadaan and his team"
+                                    </p>
+                                    <footer class="testimonial-author">
+                                        Sharmeen Obaid Chinnoy
+                                    </footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Slide Item -->
+
+                <!-- Slide Item -->
+                <div>
+                    <div class="container relative">
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2 align-center">
+                                <!-- Section Icon -->
+                                <div class="section-icon">
+                                    <span class="icon-quote"></span>
+                                </div>
+                                <!-- Section Title --><h3 class="small-title font-alt">What people say?</h3>
+                                <blockquote class="testimonial white">
+                                    <p>
+                                        Lead curator Citizens Archive of Pakistan "We were thrown away by the energy of the team. They've gone above and beyond"
+                                    </p>
+                                    <footer class="testimonial-author">
+                                        Sophia Balgamwala
+                                    </footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Slide Item -->
+
+                <!-- Slide Item -->
+                <div>
+                    <div class="container relative">
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2 align-center">
+                                <!-- Section Icon -->
+                                <div class="section-icon">
+                                    <span class="icon-quote"></span>
+                                </div>
+                                <!-- Section Title --><h3 class="small-title font-alt">What people say?</h3>
+                                <blockquote class="testimonial white">
+                                    <p>
+                                        Project Manager of National History Museum "It was very interesting to design space with them. It was a pleasure working with Sadaan's lovely team"
+                                    </p>
+                                    <footer class="testimonial-author">
+                                        Project Manager of National History Museum - Marvi Mazhar
+                                    </footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Slide Item -->
+
+            </section>
+            <!-- End Testimonials Section -->
+
+
+            <!-- Newsletter Section -->
+           <section class="newsletter-section small-section bg-gray-lighter">
+                <div class="container relative">
+
+                    <form method="POST" action="form_newsletter/" class="form align-center" id="contact_form0">
+                      {% csrf_token %}
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2">
+
+                                <div class="newsletter-label font-alt">
+                                    STAY UP-TO-DATE WITH THE LATEST HAPPENINGS AT VANILLA
+                                </div>
+
+                                <div class="mb-20">
+                                    <input placeholder="Enter Your Email" class="newsletter-field form-control input-md round mb-xs-10" type="email" name="email" id="email" pattern=".{5,100}" required/>  <!--required-->
+
+                                    <button type="submit" form="contact_form0" value="Submit" class="btn-mod btn-medium btn-round">
+                                        Subscribe
+                                    </button>
+                                </div>
+
+                                <div class="form-tip">
+                                    <i class="fa fa-info-circle"></i> Please trust us, we will never send you spam
+                                </div>
+
+                                <div id="subscribe-result"></div>
+
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </section>
+            <!-- End Newsletter Section -->
+
+
+            <!-- Contact Section -->
+            <section class="page-section" id="contact">
+                <div class="container relative">
+
+                    <h2 class="section-title font-alt mb-70 mb-sm-40">
+                        Contact
+                    </h2>
+
+                    <div class="row mb-60 mb-xs-40">
+
+                        <div class="col-md-8 col-md-offset-2">
+                            <div class="row">
+
+                                <!-- Phone -->
+
+                                <div class="col-sm-6 col-lg-4 pt-20 pb-20 pb-xs-0">
+                                    <div class="contact-item">
+                                        <div class="ci-icon">
+                                            <i class="fa fa-phone"></i>
+                                        </div>
+                                        <div class="ci-title font-alt">
+                                            Call Us
+                                        </div>
+                                        <div class="ci-text">
+                                            +92 332 3000032
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Phone -->
+
+                                <!-- Address -->
+                                <div class="col-sm-6 col-lg-4 pt-20 pb-20 pb-xs-0">
+                                    <div class="contact-item">
+                                        <div class="ci-icon">
+                                            <i class="fa fa-map-marker"></i>
+                                        </div>
+                                        <div class="ci-title font-alt">
+                                            Address
+                                        </div>
+                                        <div class="ci-text">
+                                            176 CCA Phase 6 D.H.A. Lahore, Pakistan
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Address -->
+
+                                <!-- Email -->
+                                <div class="col-sm-6 col-lg-4 pt-20 pb-20 pb-xs-0">
+                                    <div class="contact-item">
+                                        <div class="ci-icon">
+                                            <i class="fa fa-envelope"></i>
+                                        </div>
+                                        <div class="ci-title font-alt">
+                                            Email
+                                        </div>
+                                        <div class="ci-text">
+                                            <a href="mailto:info@vanillaarcade.com">info@vanillaarcade.com</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Email -->
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+
+                            <form method="POST" action="form_submit/" class="form contact-form " id="contact_form">
+                                {% csrf_token %}
+                                <div class="clearfix">
+
+                                    <div class="cf-left-col">
+
+                                        <!-- Name -->
+                                        <div class="form-group">
+                                            <input type="text" name="name" id="name" class="input-md round form-control" placeholder="Name" pattern=".{3,100}" required>
+                                        </div>
+
+                                        <!-- Email -->
+                                        <div class="form-group">
+                                            <input type="email" name="email" id="email" class="input-md round form-control" placeholder="Email" pattern=".{5,100}" required>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="cf-right-col">
+
+                                        <!-- Message -->
+                                        <div class="form-group">
+                                            <textarea name="message" id="message" class="input-md round form-control" style="height: 84px;" placeholder="Message"></textarea>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="clearfix">
+
+                                    <div class="cf-left-col">
+
+                                        <!-- Inform Tip -->
+                                        <div class="form-tip pt-20">
+                                            <i class="fa fa-info-circle"></i> All the fields are required
+                                        </div>
+
+                                    </div>
+
+                                    <div class="cf-right-col">
+
+                                        <!-- Send Button -->
+                                        <div class="align-right pt-10">
+                                            <button type="submit" form="contact_form" value="Submit" class="btn-mod btn-medium btn-round">Submit Message</button>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+
+
+                                <div id="result"></div>
+                            </form>
+
+                        </div>
+                    </div>
+                    <!-- End Contact Form -->
+
+                </div>
+            </section>
+            <!-- End Contact Section -->
+
+
+            <!-- Google Map -->
+            <div class="google-map" id="map" style="height:400px;">
+
+                <!-- <div data-address="Civic Commercial Area, Sector C DHA Phase 6, Lahore, Punjab" id="map-canvas"></div>
+
+                <div class="map-section">
+
+                    <div class="map-toggle">
+                        <div class="mt-icon">
+                            <i class="fa fa-map-marker"></i>
+                        </div>
+                        <div class="mt-text font-alt">
+                            <div class="mt-open">Open the map <i class="fa fa-angle-down"></i></div>
+                            <div class="mt-close">Close the map <i class="fa fa-angle-up"></i></div>
+                        </div>
+                    </div>
+
+                </div> -->
+
+            </div>
+            <!-- End Google Map -->
+
+
+            <!-- Foter -->
+            <footer class="page-section bg-gray-lighter footer pb-60">
+                <div class="container">
+
+                    <!-- Footer Logo -->
+                    <div class="local-scroll mb-30 wow fadeInUp" data-wow-duration="1.2s">
+                        <!-- <a href="#top"><img src="newLogo/" width="78" height="36" alt="" /></a> -->
+                        <a href="#top"><img src="{% static "images/vanilla-logo-dark2.png" %}" width="78" height="36" alt="" /></a>
+                    </div>
+                    <!-- End Footer Logo -->
+
+                    <!-- Social Links -->
+                    <div class="footer-social-links mb-110 mb-xs-60">
+                        <a href="https://www.facebook.com/VanillaArcade/" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+                        <!-- <a href="#" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a> -->
+                        <a href="https://www.youtube.com/channel/UCRgRDARituIDrmnS5zppwQQ" title="Youtube" target="_blank"><i class="fa fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/vanillaarcade_official/" title="Instagram" target="_blank"><i class="fa fa-instagram"></i></a>
+                    </div>
+                    <!-- End Social Links -->
+
+                    <!-- Footer Text -->
+                    <div class="footer-text">
+
+                        <!-- Copyright -->
+                        <div class="footer-copy font-alt">
+                            <a href="" target="_blank">&copy; Vanilla Arcade 2018</a>.
+                        </div>
+                        <!-- End Copyright -->
+
+                        <div class="footer-made">
+                            info@vanillaarcade.com
+                        </div>
+
+                    </div>
+                    <!-- End Footer Text -->
+
+                 </div>
+
+
+                 <!-- Top Link -->
+                 <div class="local-scroll">
+                     <a href="#top" class="link-to-top"><i class="fa fa-caret-up"></i></a>
+                 </div>
+                 <!-- End Top Link -->
+
+            </footer>
+            <!-- End Foter -->
+
+
+        </div>
+        <!-- End Page Wrap -->
+
+        <!-- JS -->
+        <script type="text/javascript" src="{% static "js/jquery-1.11.2.min.js" %}"></script>
+        <script type="text/javascript" src="{% static "js/jquery.easing.1.3.js" %}"></script>
+        <script type="text/javascript" src="{% static "js/bootstrap.min.js" %}"></script>
+        <script type="text/javascript" src="{% static "js/SmoothScroll.js" %}"></script>
+        <script type="text/javascript" src="{% static "js/jquery.scrollTo.min.js" %}"></script>
+        <script type="text/javascript" src="{% static "js/jquery.localScroll.min.js" %}"></script>
+        <script type="text/javascript" src="{% static "js/jquery.viewport.mini.js" %}"></script>
+        <script type="text/javascript" src="{% static "js/jquery.countTo.js" %}"}></script>
+        <script type="text/javascript" src="{% static "js/jquery.appear.js" %}"></script>
+        <script type="text/javascript" src="{% static "js/jquery.sticky.js" %}"></script>
+        <script type="text/javascript" src="{% static "js/jquery.parallax-1.1.3.js" %}"></script>
+        <script type="text/javascript" src="{% static "js/jquery.fitvids.js" %}"></script>
+        <script type="text/javascript" src="{% static "js/owl.carousel.min.js" %}"></script>
+        <script type="text/javascript" src="{% static "js/isotope.pkgd.min.js" %}"></script>
+        <script type="text/javascript" src="{% static "js/imagesloaded.pkgd.min.js" %}"></script>
+        <script type="text/javascript" src="{% static "js/jquery.magnific-popup.min.js" %}"></script>
+        <!-- Replace test API Key "AIzaSyBfiIZSk_QC7UWgdGekKZLEUXUBi_mWPnE" with your own one below
+        **** You can get API Key here - https://developers.google.com/maps/documentation/javascript/get-api-key -->
+        <script>
+          var map;
+          function initMap() {
+            var myLatLng = {lat: 31.468612, lng: 74.449624};
+            map = new google.maps.Map(document.getElementById('map'), {
+              center: myLatLng,
+              zoom: 16
+            });
+            var marker = new google.maps.Marker({
+              position: myLatLng,
+              map: map,
+              title: 'Vanilla'
+            });
+          }
+        </script>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAaD_pOkxx30XLbx28ou1DBaZgLtKexxTg&callback=initMap"></script>
+        <script type="text/javascript" src="{% static "js/gmap3.min.js" %}"></script>
+        <script type="text/javascript" src="{% static "js/wow.min.js" %}"></script>
+        <script type="text/javascript" src="{% static "js/masonry.pkgd.min.js" %}"></script>
+        <script type="text/javascript" src="{% static "js/jquery.simple-text-rotator.min.js" %}"></script>
+        <script type="text/javascript" src="{% static "js/all.js" %}"></script>
+        <script type="text/javascript" src="{% static "js/contact-form.js" %}"></script>
+        <script type="text/javascript" src="{% static "js/jquery.ajaxchimp.min.js" %}"></script>
+        <script type="text/javascript" src="{% static "js/jquery.mb.YTPlayer.js" %}"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+
+        <!--[if lt IE 10]><script type="text/javascript" src={% static 'first_app/js/placeholder.js' %}></script><![endif]-->
+        <!-- <script type="text/javascript" src="{% static "js/jquery-2.2.0.min.js" %}"></script> -->
+        <script>
+        $(document).ready(function(){
+              $('.customer-logos').slick({
+                  slidesToShow: 6,
+                  slidesToScroll: 1,
+                  autoplay: true,
+                  autoplaySpeed: 1500,
+                  arrows: false,
+                  dots: false,
+                  pauseOnHover: false,
+                  responsive: [{
+                      breakpoint: 768,
+                      settings: {
+                          slidesToShow: 4
+                      }
+                  }, {
+                      breakpoint: 520,
+                      settings: {
+                          slidesToShow: 3
+                      }
+                  }]
+              });
+          });
+          </script>
+
+    </body>
+</html>
